@@ -50,7 +50,7 @@ export default function TheHousePage() {
 
         <div className="  " id="the-house-intro">
 
-          <div className="container shape-mockup-wrap">
+          <div className="container ">
                   <div className="row gy-4 space-top ">
                   <div className="col-12">
                     <div className="blog-img">
@@ -82,7 +82,7 @@ export default function TheHousePage() {
         </div>
         {/* Section 2: Vision (Destination-style layout) */}
         <section className="space-top" id="the-house-vision">
-          <div className="container shape-mockup-wrap">
+          <div className="container ">
             <div className="row">
               <div className="col-xl-12">
                 <div className="page-single">
@@ -127,7 +127,7 @@ export default function TheHousePage() {
 
               {/* Section 3: Rooms (Destination-style gallery/grid) */}
         <section className="space" id="the-house-rooms">
-          <div className="container shape-mockup-wrap">
+          <div className="container ">
             <div className="row">
               <div className="col-xl-12">
                 <div className="page-single">
@@ -283,7 +283,7 @@ export default function TheHousePage() {
 
                       {/* Section 3: Rooms (Destination-style gallery/grid) */}
         <section className="" id="the-house-rooms">
-          <div className="container shape-mockup-wrap">
+          <div className="container ">
             <div className="row">
               <div className="col-xl-12">
                 <div className="page-single">
@@ -393,7 +393,7 @@ export default function TheHousePage() {
 
                 {/* Section 3: Description of the House (Destination-style layout) */}
         <section className="space" id="the-house-vision">
-          <div className="container shape-mockup-wrap">
+          <div className="container ">
             <div className="row">
               <div className="col-xl-12">
                 <div className="page-single">
@@ -419,7 +419,7 @@ export default function TheHousePage() {
 
         {/* Section 4: Values (Destination-style checklist) */}
         <section className="" id="the-house-values">
-          <div className="container shape-mockup-wrap">
+          <div className="container ">
             <div className="row">
               <div className="col-xl-12">
                 <div className="page-single">
@@ -517,7 +517,7 @@ export default function TheHousePage() {
   
                 {/* Section 3: Description of the House (Destination-style layout) */}
         <section className="space" id="the-house-vision">
-          <div className="container shape-mockup-wrap">
+          <div className="container ">
             <div className="row">
               <div className="col-xl-12">
                 <div className="page-single">
@@ -547,7 +547,7 @@ export default function TheHousePage() {
 
         <div className="about-area position-relative overflow-hidden space" id="the-house-intro">
 
-          <div className="container shape-mockup-wrap">
+          <div className="container ">
             <div className="row">
               <div className="col-xl-6 mb-40 mb-xl-0">
                 <div className="img-box1">
@@ -602,7 +602,7 @@ export default function TheHousePage() {
 
                         {/* Section 3: Description of the House (Destination-style layout) */}
         <section className="" id="the-house-vision">
-          <div className="container shape-mockup-wrap">
+          <div className="container ">
             <div className="row">
               <div className="col-xl-12">
                 <div className="page-single">

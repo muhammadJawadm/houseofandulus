@@ -158,7 +158,7 @@ function DestinationOne() {
                               <button
                                 type="button"
                                 onClick={()=>handleFlip(dest.id)}
-                                className="th-btn style2 th-icon"
+                                className="th-btn style1 th-icon"
                                 aria-label={`View details for ${dest.name}`}
                               >Details</button>
                             </div>
@@ -174,12 +174,12 @@ function DestinationOne() {
                             <button
                               type="button"
                               onClick={()=>handleFlip(dest.id)}
-                              className="th-btn style3 th-icon"
+                              className="th-btn style3 "
                               aria-label={`Close details for ${dest.name}`}
                             >Back</button>
                             <Link
                               href={dest.link}
-                              className="th-btn style2"
+                              className="th-btn style1 th-icon"
                               aria-label={`Go to ${dest.name} retreat page`}
                             >Book Stay</Link>
                           </div>
@@ -210,11 +210,13 @@ function DestinationOne() {
           /* Front overlay adjustments */
           .flip-front .destination-content .box-title { color:#ffffff; text-shadow:0 2px 8px rgba(0,0,0,0.45); }
           .flip-front .destination-content .destination-subtitle { color:#d9efe6; font-weight:500; }
-          .flip-front .th-btn.style2 { background:#ffffff; color:#2e4c3f; border:none; }
-          .flip-front .th-btn.style2:hover { background: #d9efe6; color:#1f392f; }
+          .flip-front .th-btn.style2 { background:#A86A4C; color:#ffffff; border:none; }
+          .flip-front .th-btn.style2:hover { background:#b77a5e; color:#ffffff; }
+          .flip-front .th-btn.style2:active { background: #945d40; }
+          .flip-front .th-btn.style2:focus-visible { outline:2px solid #ffe7dc; outline-offset:3px; }
           .flip-back button.th-btn { min-width:130px; }
-          // .flip-back button.th-btn { background:#ffffff; color: #275041; }
-          .flip-back button.th-btn:hover { background: #d9efe6; color: #1f392f; }
+          // .flip-back button.th-btn { background:#ffffff; color: #ffffffff; }
+          .flip-back button.th-btn:hover { background: #d9efe6; color: #ffffffff; }
           /* Accessibility focus */
           .flip-card button:focus-visible { outline:2px solid #fff; outline-offset:3px; }
           .destination-content { display:flex; align-items:flex-end; justify-content:space-between; gap:12px; }
@@ -222,7 +224,7 @@ function DestinationOne() {
           .destination-click:hover .box-title,
           .destination-click:focus .box-title { text-decoration:underline; }
           .destination-click:focus-visible { outline:2px solid #ffffff; outline-offset:3px; border-radius:4px; }
-          .flip-back-content .th-btn.style2 { background:#ffffff; color: #234237; }
+          .flip-back-content .th-btn.style2 { background:#ffffff; color: #ffffffff; }
           .flip-back-content .th-btn.style2:hover { background: #d9efe6; }
           @media (max-width: 767px){ .flip-card .flip-inner { aspect-ratio: 2/3; } }
           @media (prefers-reduced-motion: reduce){ .flip-inner { transition:none; } }

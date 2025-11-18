@@ -290,11 +290,11 @@ const OrganizeRetreatForm = () => {
         .option-group legend.section-heading { display:block; }
         .retreat-interest-form .form-control { background:#fff; border:1px solid #d9e6e0; border-radius:8px; min-height:46px; }
         .retreat-interest-form textarea.form-control { min-height:110px; resize:vertical; }
-        .checkbox-line { display:block; padding:10px 14px; border:1px solid #d9e6e0; border-radius:10px; font-size:13px; background:#fff; cursor:pointer; position:relative; user-select:none; }
+        .checkbox-line { display:block; padding:10px 14px; border:1px solid #d9e6e0; border-radius:10px; font-size:13px; background:#fff; cursor:pointer; position:relative; user-select:none; transition:.18s ease; }
         .checkbox-line input { margin-right:8px; }
-        .checkbox-line.active { border-color:#4a6b5a; background:#f2f8f5; }
+        .checkbox-line.active { border-color:var(--theme-color); background:rgba(189,105,56,0.08); }
         .form-section { margin-bottom:34px; }
-        .section-heading { font-size:16px; letter-spacing:.05em; text-transform:uppercase; font-weight:600; margin-bottom:18px; color:#2a4638; }
+        .section-heading { font-size:16px; letter-spacing:.05em; text-transform:uppercase; font-weight:600; margin-bottom:18px; color:var(--theme-color); }
         .form-status { font-size:14px; }
         @media (max-width: 767px){ .card-plate { padding:22px 20px 10px; } .checkbox-line { font-size:12px; } }
       `}</style>

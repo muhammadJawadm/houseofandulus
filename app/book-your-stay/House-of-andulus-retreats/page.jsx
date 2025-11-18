@@ -36,11 +36,11 @@ export default function HouseofAndulusRetreats() {
     <>
       <HeaderOne />
       <Breadcrumb title="House of Andulus Retreats" />
-      <main className="space-top space-extra-bottom">
+      <main className="space-top ">
    
 
   {/* Couples’ Retreat (Text Focus) */}
-        <section className="space" id="couples-retreat">
+        <section className="space-bottom" id="couples-retreat">
           <div className="container shape-mockup-wrap">
             <div className="row justify-content-center">
               <div className="col-xl-12">
@@ -158,7 +158,7 @@ export default function HouseofAndulusRetreats() {
         </section>
 
   {/* Women&rsquo;s Retreat */}
-        <section className="space bg-smoke2" id="womens-retreat">
+        <section className="space-bottom bg-smoke2" id="womens-retreat">
           <div className="container shape-mockup-wrap">
             <div className="row align-items-center">
               <div className="col-xl-5 order-2 order-xl-1">

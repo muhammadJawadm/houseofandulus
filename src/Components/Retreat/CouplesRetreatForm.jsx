@@ -101,7 +101,7 @@ const CouplesRetreatForm = () => {
 				<div className="row justify-content-center">
 					<div className="col-xl-9">
 						<div className="title-area text-center mb-40">
-							<span className="sub-title style1">Couples’ Retreat – Expression of Interest Form</span>
+							{/* <span className="sub-title style1">Couples’ Retreat – Expression of Interest Form</span> */}
 							<h2 className="sec-title">Couples’ Retreat – Expression of Interest</h2>
 							<p className="sec-text">Share where you are and what you seek—so we can help curate a retreat that nurtures reconnection, mercy and renewal.</p>
 						</div>
@@ -195,19 +195,19 @@ const CouplesRetreatForm = () => {
 				.retreat-interest-form .form-label { font-weight:600; font-size:14px; letter-spacing:.02em; }
 				.retreat-interest-form .form-control { background:#fff; border:1px solid #d9e6e0; border-radius:8px; min-height:46px; }
 				.retreat-interest-form textarea.form-control { min-height:110px; resize:vertical; }
-				.checkbox-line { display:block; padding:10px 14px; border:1px solid #d9e6e0; border-radius:10px; font-size:13px; background:#fff; cursor:pointer; position:relative; }
+				.checkbox-line { display:block; padding:10px 14px; border:1px solid #d9e6e0; border-radius:10px; font-size:13px; background:#fff; cursor:pointer; position:relative; transition:.18s ease; }
 				.checkbox-line input { margin-right:8px; }
-				.checkbox-line.active { border-color:#4a6b5a; background:#f2f8f5; }
+				.checkbox-line.active { border-color:var(--theme-color); background:rgba(189,105,56,0.08); }
 				.form-section { margin-bottom:34px; }
-				// .card-plate { background:linear-gradient(145deg,#ffffff,#f5f9f7); border:1px solid #dbe7e1; border-radius:18px; padding:28px 28px 14px; box-shadow:0 8px 22px -8px rgba(26,54,39,0.12); }
-				.section-heading { font-size:16px; letter-spacing:.05em; text-transform:uppercase; font-weight:600; margin-bottom:18px; color:#2a4638; }
+				// .card-plate { background:linear-gradient(145deg,#ffffff,#f5f9f7); border:1px solid #dbe7e1; border-radius:18px; padding:28px 28px 14px; box-shadow:0 8px 22px -8px rgba(189,105,56,0.12); }
+				.section-heading { font-size:16px; letter-spacing:.05em; text-transform:uppercase; font-weight:600; margin-bottom:18px; color:var(--theme-color); }
 				.form-status { font-size:14px; }
-				.radio-pill { position:relative; display:flex; align-items:center; gap:10px; padding:12px 18px 12px 46px; border:1px solid #cfdcd6; background:#ffffff; border-radius:14px; font-size:13px; font-weight:500; color:#2e4a3c; cursor:pointer; transition:.18s ease; min-height:48px; }
-				.radio-pill:hover { background:#f1f6f3; border-color:#b9cac2; }
-				.radio-pill.active { background:#e8f3ee; border-color:#4a6b5a; box-shadow:0 0 0 3px rgba(74,107,90,0.15); }
+				.radio-pill { position:relative; display:flex; align-items:center; gap:10px; padding:12px 18px 12px 46px; border:1px solid #cfdcd6; background:#ffffff; border-radius:14px; font-size:13px; font-weight:500; color:var(--theme-color); cursor:pointer; transition:.18s ease; min-height:48px; }
+				.radio-pill:hover { background:rgba(189,105,56,0.06); border-color:rgba(189,105,56,0.45); }
+				.radio-pill.active { background:rgba(189,105,56,0.14); border-color:var(--theme-color); box-shadow:0 0 0 3px rgba(189,105,56,0.22); }
 				.radio-pill input { position:absolute; inset:0; opacity:0; cursor:pointer; margin:0; }
-				.radio-indicator { position:absolute; left:16px; width:20px; height:20px; border:2px solid #4a6b5a; border-radius:50%; display:flex; align-items:center; justify-content:center; background:#ffffff; transition:.22s ease; }
-				.radio-pill.active .radio-indicator { background:#4a6b5a; }
+				.radio-indicator { position:absolute; left:16px; width:20px; height:20px; border:2px solid var(--theme-color); border-radius:50%; display:flex; align-items:center; justify-content:center; background:#ffffff; transition:.22s ease; }
+				.radio-pill.active .radio-indicator { background:var(--theme-color); }
 				.radio-pill.active .radio-indicator::after { content:""; width:8px; height:8px; background:#ffffff; border-radius:50%; }
 				@media (max-width: 767px){ .card-plate { padding:22px 20px 10px; } .checkbox-line { font-size:12px; } .radio-pill { padding:10px 16px 10px 44px; } }
 			`}</style>

@@ -1,0 +1,61 @@
+/* Custom font overrides for Vanitas */
+/* Using provided OTF sources. Consider adding WOFF2 for performance later. */
+@font-face {
+  font-family: 'Vanitas';
+  src: url('/assets/fonts/vanitas/fonnts.com-Vanitas-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vanitas';
+  src: url('/assets/fonts/vanitas/fonnts.com-Vanitas-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vanitas';
+  src: url('/assets/fonts/vanitas/fonnts.com-Vanitas-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vanitas';
+  src: url('/assets/fonts/vanitas/fonnts.com-Vanitas-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+:root {
+  --title-font: 'Vanitas', 'Manrope', sans-serif;
+  --body-font: 'Vanitas', 'Inter', sans-serif;
+}
+html, body {
+  font-family: var(--body-font);
+  font-weight: 500;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font);
+  font-weight: 700;
+}
+/* Optional: utility class if you need to force Vanitas */
+.font-vanitas { font-family: 'Vanitas', 'Manrope', sans-serif !important; }
+
+/* Force Vanitas on virtually all textual elements, even if inline styles set another font.
+   Exclude icon elements to preserve Font Awesome rendering. */
+body :not(i):not(.fa):not(.fa-solid):not(.fa-regular):not(.fa-light):not(.fa-brands):not(.fa-thin) {
+  font-family: 'Vanitas', 'Inter', sans-serif !important;
+}
+/* Common text-bearing elements explicit weights */
+p, span, a, li, label, input, textarea, button, small, td, th, div {
+  font-weight: 500;
+}
+/* Elevate paragraph weight for better readability */
+p { font-weight: 600 !important; letter-spacing: 1px; }
+strong, b, .fw-bold { font-weight: 900 !important; }
+em, i:not(.fa):not(.fa-solid):not(.fa-regular):not(.fa-light):not(.fa-brands):not(.fa-thin) { font-style: italic; }
+
+/* Heading reinforcement in case other CSS overrides later */
+h1, h2, h3, h4, h5, h6 { font-weight: 700 !important; }

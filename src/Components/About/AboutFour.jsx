@@ -159,7 +159,7 @@ function AboutFour() {
                letter-spacing:.08em;
                text-transform:uppercase;
                background:#ffffff;
-               color:#234237;
+                      color:var(--theme-color);
              }
              .founders-header .founders-heading {
                font-size:42px;
@@ -182,15 +182,16 @@ function AboutFour() {
                border-radius:18px;
                position:relative;
              }
-             .founders-body.text-only:before {
-               content:"";
-               position:absolute;
-               top:0; left:50%;
-               transform:translateX(-50%);
-               width:160px; height:4px;
-               background:linear-gradient(90deg,#234237,#46826b);
-               border-radius:4px;
-             }
+                   .founders-body.text-only:before {
+                      content:"";
+                      position:absolute;
+                      top:0; left:50%;
+                      transform:translateX(-50%);
+                      width:160px; height:4px;
+                      /* Use theme color with a subtle transparency gradient */
+                      background:linear-gradient(90deg,var(--theme-color),rgba(189,105,56,0.75));
+                      border-radius:4px;
+                   }
              .founders-text { font-size:16.4px; line-height:1.72; color:#2e3f36; margin:0 0 24px; }
              .founders-text.lead { font-size:17.2px; }
              .founders-text.with-drop-cap:first-letter {
@@ -210,40 +211,40 @@ function AboutFour() {
                // background:linear-gradient(135deg,#ffffff 0%, #f5faf7 65%, #eef7f3 100%);
                margin:0 0 30px;
              }
-             .founder-block:before {
-               content:"";
-               position:absolute;
-               left:18px; top:0;
-               height:4px; width:156px;
-               border-radius:0 0 4px 4px;
-               background:linear-gradient(90deg,#234237,#46826b);
-             }
+                   .founder-block:before {
+                      content:"";
+                      position:absolute;
+                      left:18px; top:0;
+                      height:4px; width:156px;
+                      border-radius:0 0 4px 4px;
+                      background:linear-gradient(90deg,var(--theme-color),rgba(189,105,56,0.75));
+                   }
             //  .founder-ajmal { background:linear-gradient(135deg,#ffffff 0%, #f6fbf9 55%, #eef7f3 100%); }
-             .founder-ajmal:after {
-               content:"Ajmal Masroor";
-               position:absolute;
-               top:-11px; left:20px;
-               background:#234237;
-               color:#fff;
-               font-size:11px;
-               letter-spacing:.08em;
-               padding:2px 10px 3px;
-               border-radius:14px;
-               text-transform:uppercase;
-             }
+                   .founder-ajmal:after {
+                      content:"Ajmal Masroor";
+                      position:absolute;
+                      top:-11px; left:20px;
+                      background:var(--theme-color);
+                      color:#fff;
+                      font-size:11px;
+                      letter-spacing:.08em;
+                      padding:2px 10px 3px;
+                      border-radius:14px;
+                      text-transform:uppercase;
+                   }
             //  .founder-henrietta { background:linear-gradient(135deg,#ffffff 0%, #f3faf7 55%, #e9f4ef 100%); border-color:#d3e3dd; }
-             .founder-henrietta:after {
-               content:"Henrietta Szovati";
-               position:absolute;
-               top:-11px; left:20px;
-               background:#356a55;
-               color:#fff;
-               font-size:11px;
-               letter-spacing:.08em;
-               padding:2px 10px 3px;
-               border-radius:14px;
-               text-transform:uppercase;
-             }
+                   .founder-henrietta:after {
+                      content:"Henrietta Szovati";
+                      position:absolute;
+                      top:-11px; left:20px;
+                      background:var(--theme-color);
+                      color:#fff;
+                      font-size:11px;
+                      letter-spacing:.08em;
+                      padding:2px 10px 3px;
+                      border-radius:14px;
+                      text-transform:uppercase;
+                   }
              .founder-block .founders-text { margin-bottom:0; }
              .vision-highlight {
                position:relative;
@@ -269,8 +270,8 @@ function AboutFour() {
                font-size:15px;
                letter-spacing:.05em;
              }
-             .founders-cta-alt { background:#234237; border:1px solid #234237; }
-             .founders-cta-alt:hover { background:#356a55; border-color:#356a55; }
+             .founders-cta-alt { background:var(--theme-color); border:1px solid var(--theme-color); }
+             .founders-cta-alt:hover { background:#a55629; border-color:#a55629; }
              .motion-safe { opacity:0; transform:translateY(30px); transition:opacity .9s cubic-bezier(.25,.8,.25,1), transform .9s cubic-bezier(.25,.8,.25,1); }
              .motion-safe-visible { opacity:1; transform:translateY(0); }
 

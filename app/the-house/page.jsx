@@ -504,7 +504,7 @@ export default function TheHousePage() {
             #the-house-values .flip-front .destination-content { background:rgba(0,0,0,0.55); position:absolute; left:0; right:0; bottom:0; padding:6px 10px; }
             #the-house-values .flip-front .destination-subtitle span { color:#ffffff; font-weight:600; letter-spacing:.03em; font-size:20px; }
             /* Back face overlays full area */
-            #the-house-values .flip-back { position:absolute; inset:0; padding:0px 18px 30px 18px; transform:rotateY(180deg); backface-visibility:hidden; -webkit-backface-visibility:hidden; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; border:1px solid #e6eeea; border-radius:14px; background:linear-gradient(155deg,#234237 0%, #92512B 5%, #17A9CB 100%); color:#ffffff; }
+            #the-house-values .flip-back { position:absolute; inset:0; padding:0px 18px 30px 18px; transform:rotateY(180deg); backface-visibility:hidden; -webkit-backface-visibility:hidden; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; border:1px solid #e6eeea; border-radius:14px; background:linear-gradient(225deg,var(--color-1) 0%, var(--color-2) 50%, var(--color-3) 100%); color:#ffffff; }
             #the-house-values .flip-back-content { width:100%; max-width:90%; }
             #the-house-values .flip-back-content .destination-subtitle span { color:#f4f8f6; font-weight:600; letter-spacing:.02em; font-size:23px; }
             #the-house-values .flip-text { font-size:18px; line-height:1.55; letter-spacing:.02em; color:#eef7f3; }

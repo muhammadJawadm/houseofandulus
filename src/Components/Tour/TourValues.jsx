@@ -45,7 +45,7 @@ function TourValues() {
 									<img src={item.image} alt={item.title} loading="lazy" />
 								</div>
 								<div className="value-card-content d-flex flex-column justify-content-center">
-									<h3 className="value-card-title h5 mb-3">{item.title}</h3>
+									<h3 className="value-card-title h5 mb-0">{item.title}</h3>
 									<p className="value-card-text mb-0">{item.body}</p>
 								</div>
 							</div>
@@ -55,8 +55,8 @@ function TourValues() {
 				<style jsx>{`
 					.value-card { background:#FFFAF3; border-radius:16px; box-shadow:0 8px 30px -8px rgba(0,0,0,0.25); padding:18px 20px; gap:20px; position:relative; overflow:hidden; }
 					.value-card-img img { width:130px; height:130px; object-fit:cover; border-radius:12px; display:block; }
-					.value-card-title { color:#234237; letter-spacing:.02em; font-weight:600; }
-					.value-card-text { font-size:.9rem; line-height:1.55; color:#2f4a3f; }
+					.value-card-title { color:var(--primary-color); letter-spacing:.02em; font-weight:600; }
+					.value-card-text { font-size:1rem; letter-spacing:.02em; line-height:1.55; color:#000; }
 					.value-card::before { content:""; position:absolute; inset:0; background:linear-gradient(135deg, rgba(35,66,55,0.08) 0%, rgba(71,121,103,0.10) 70%); opacity:0; transition:opacity .4s ease; }
 					.value-card:hover::before { opacity:1; }
 					.value-card:hover { box-shadow:0 12px 40px -10px rgba(0,0,0,0.30); }

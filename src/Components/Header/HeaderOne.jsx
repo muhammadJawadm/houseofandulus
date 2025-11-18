@@ -96,7 +96,8 @@ function HeaderOne() {
                                                 style={{
                                                     height: 'auto',
                                                     width: '60px',
-                                                    display: 'block'
+                                                    display: 'block',
+                                                    marginRight: '90px',
                                                 }}
                                             />
                                         </Link>

@@ -36,6 +36,11 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/assets/css/magnific-popup.min.css" />
         <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
+        {/* Custom font overrides */}
+        <link rel="stylesheet" href="/assets/css/custom-fonts.css" />
+        {/* Preload Vanitas font files for faster rendering */}
+        <link rel="preload" href="/assets/fonts/vanitas/fonnts.com-Vanitas-Bold.otf" as="font" type="font/otf" crossOrigin="anonymous" />
+        <link rel="preload" href="/assets/fonts/vanitas/fonnts.com-Vanitas-Bold.otf" as="font" type="font/otf" crossOrigin="anonymous" />
       </head>
       <body>{children}</body>
     </html>

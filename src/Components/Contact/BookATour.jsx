@@ -156,6 +156,27 @@ function BookATour() {
                     Your browser does not support the video tag.
                 </video>
             </Modal>
+                        {/* Adjust input field appearance: now pure white background */}
+                        <style jsx>{`
+                            .contact-form.style2 .form-control {
+                                background:#ffffff !important;
+                                border:1px solid #e9e2d9 !important;
+                                color:#000 !important;
+                                box-shadow:0 2px 6px -3px rgba(0,0,0,0.06);
+                                transition:border-color .25s ease, background .25s ease;
+                            }
+                            .contact-form.style2 .form-group img { filter:brightness(.9); }
+                            .contact-form.style2 .form-control::placeholder { color:#7d6f63; opacity:.75; }
+                            .contact-form.style2 textarea.form-control { min-height:120px; }
+                            .contact-form.style2 .form-control:focus {
+                                background:#ffffff !important;
+                                border-color:var(--theme-color) !important;
+                                box-shadow:0 0 0 3px rgba(189,105,56,0.18);
+                            }
+                            @media (max-width:640px){
+                                .contact-form.style2 .form-control { font-size:14px; }
+                            }
+                        `}</style>
         </div>
     )
 }

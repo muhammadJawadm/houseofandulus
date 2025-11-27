@@ -8189,9 +8189,17 @@ ol.wp-block-rss {
 
 @media (max-width: 1199px) {
   .header-layout1 .sticky-wrapper .menu-area {
-    padding: 12px 0;
+    padding: 10px 0;
   }
 }
+
+@media (max-width: 1024px) {
+  .header-layout1 .sticky-wrapper .menu-area {
+    padding: 3px 0;
+  }
+}
+
+
 
 .header-layout1 .menu-area {
   z-index: 0;

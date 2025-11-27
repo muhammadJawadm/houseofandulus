@@ -97,7 +97,8 @@ function HeaderOne() {
                                                     height: 'auto',
                                                     width: '60px',
                                                     display: 'block',
-                                                    marginRight: '90px',
+                                                    marginLeft: '60px',
+                                                    marginRight: '80px',
                                                 }}
                                             />
                                         </Link>

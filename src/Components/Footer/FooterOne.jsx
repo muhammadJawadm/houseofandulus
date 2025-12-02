@@ -101,8 +101,8 @@ function FooterOne() {
                                         </div>
                                         <div className="details">
                                             <p>
-                                                <Link href="tel:+34 000 000 000" className="info-box_link">
-                                                    +34 000 000 000
+                                                <Link href="tel:00447872553256" className="info-box_link">
+                                                    00447872553256
                                                 </Link>
                                             </p>
                                             {/* <p>
@@ -140,7 +140,9 @@ function FooterOne() {
                                             <img src="/assets/img/icon/location-dot.svg" alt="img" />
                                         </div>
                                         <div className="details">
-                                            <p>Andalucia, Spain x7792 street</p>
+                                            {/* <p>Andalucia, Spain x7792 street</p> */}
+                                            <p>Andalucia, Spain</p>
+
                                         </div>
                                     </div>
                                 </div>

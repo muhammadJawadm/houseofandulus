@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,  
   "engines": {
-    "node": "22.21.1"
+    "node": "23.x"
   },
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -54,5 +54,6 @@
     ]
   }
 }
+
 
 

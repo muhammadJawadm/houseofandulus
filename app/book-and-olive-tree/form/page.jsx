@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import HeaderOne from "../../../src/Components/Header/HeaderOne";
 import FooterFour from "../../../src/Components/Footer/FooterFour";
 import ScrollToTop from "../../../src/Components/ScrollToTop";
@@ -12,7 +12,9 @@ export default function OliveTreeBookingFormPage() {
       <HeaderOne />
       <Breadcrumb title="Book & Olive Tree – Form" />
       <main>
-        <OliveTreeBookingForm />
+        <Suspense fallback={null}>
+          <OliveTreeBookingForm />
+        </Suspense>
       </main>
       <FooterFour />
       <ScrollToTop />

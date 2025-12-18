@@ -372,7 +372,7 @@ function HeaderOne() {
                                 <div className="col-auto d-none d-xl-block">
                                     <div className="header-button">
                                         <Link href="/book-and-olive-tree" className="th-btn style3 th-icon">
-                                            Book a Tree
+                                            Book an Olive Tree
                                         </Link>
                                     </div>
                                 </div>

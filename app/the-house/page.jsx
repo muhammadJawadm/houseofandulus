@@ -575,11 +575,11 @@ export default function TheHousePage() {
                   Each tree planted nourishes both land and soul, carrying forward the mission of wellness, knowledge, and community—the same values upon which Andalusia was built. Experience the extraordinary, restore the balance, and let your roots grow here in the Garden of Andalus—where faith meets earth, and giving becomes eternal.
                 </p>
                 <div className="mt-30 d-flex flex-wrap align-items-center" style={{ gap: '16px' }}>
-                  <Link href="/contact" className="th-btn style3 th-icon" aria-label="Donate for a tree">
-                    Donate For A Tree
+                  <Link href="/book-and-olive-tree" className="th-btn style3 th-icon" aria-label="Donate for a tree">
+                    Buy an Olive Tree 
                   </Link>
-                  <Link href="/contact" className="th-btn style1 th-icon" aria-label="Plant a tree">
-                    Plant A Tree
+                  <Link href="/book-and-olive-tree/form" className="th-btn style1 th-icon" aria-label="Plant a tree">
+                    Plant An Olive Tree
                   </Link>
                 </div>
                 </div>

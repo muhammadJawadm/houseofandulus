@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,6 +16,16 @@ const treeOptions = [
 ];
 
 const OliveTreeBooking = () => {
+  // Flipping state for card
+  const [flipped, setFlipped] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFlipped(f => !f);
+    }, 3000); // flip every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="olive-wrapper">
       <section className="olive-hero">
@@ -40,23 +50,27 @@ const OliveTreeBooking = () => {
               <div className="story-card">
                 <div className="story-header">
                   <div className="sliding-images">
-                    <div className="image-wrapper slide-left">
-                      <Image 
-                        src={pic1} 
-                        alt="Olive Tree 1" 
-                        className="slide-image"
-                        width={350}
-                        height={350}
-                      />
-                    </div>
-                    <div className="image-wrapper slide-right">
-                      <Image 
-                        src={pic2} 
-                        alt="Olive Tree 2" 
-                        className="slide-image"
-                        width={350}
-                        height={350}
-                      />
+                    <div className={`flip-card${flipped ? ' flipped' : ''}`}> 
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front image-wrapper">
+                          <Image 
+                            src={pic1} 
+                            alt="Olive Tree 1" 
+                            className="slide-image"
+                            width={350}
+                            height={350}
+                          />
+                        </div>
+                        <div className="flip-card-back image-wrapper">
+                          <Image 
+                            src={pic2} 
+                            alt="Olive Tree 2" 
+                            className="slide-image"
+                            width={350}
+                            height={350}
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <h3 className="story-title">The Olive Garden of Andalus</h3>
@@ -237,70 +251,78 @@ const OliveTreeBooking = () => {
           position: relative;
         }
 
+        .flip-card {
+          background: transparent;
+          width: 350px;
+          height: 350px;
+          perspective: 1200px;
+          margin: 0 auto;
+          
+        }
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+          transform-style: preserve-3d;
+        }
+        .flip-card.flipped .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .flip-card-front {
+          z-index: 2;
+        }
+        .flip-card-back {
+          transform: rotateY(180deg);
+          z-index: 1;
+        }
+
         .sliding-images {
           margin: 2rem 0;
           display: flex;
           justify-content: center;
-          gap: 4rem;
-          min-height: 380px;
           align-items: center;
-        }
-        
-        .image-wrapper {
-          animation-duration: 1.2s;
-          animation-timing-function: ease-out;
-          animation-fill-mode: both;
+          min-height: 380px;
         }
         
         .slide-image {
           width: 350px !important;
           height: 350px !important;
-          border-radius: 50%;
+          border-radius: 24px;
           object-fit: cover;
           box-shadow: 0 10px 30px rgba(0,0,0,0.25);
           display: block !important;
           transition: transform 0.3s ease;
         }
         
-        .image-wrapper:hover .slide-image {
-          transform: scale(1.05) rotate(5deg);
-        }
-        
-        .slide-left {
-          animation-name: slideFromLeft;
-          animation-delay: 0s;
-        }
-        
-        .slide-right {
-          animation-name: slideFromRight;
-          animation-delay: 0.6s;
-        }
-        
-        @keyframes slideFromLeft {
-          0% {
-            transform: translateX(-400px) rotate(-30deg);
-            opacity: 0;
+        @media (max-width: 767px) {
+          .sliding-images {
+            min-height: 280px;
           }
-          100% {
-            transform: translateX(0) rotate(0deg);
-            opacity: 1;
+          .flip-card, .flip-card-inner {
+            width: 250px;
+            height: 250px;
           }
-        }
-        
-        @keyframes slideFromRight {
-          0% {
-            transform: translateX(400px) rotate(30deg);
-            opacity: 0;
-          }
-          100% {
-            transform: translateX(0) rotate(0deg);
-            opacity: 1;
+          .slide-image {
+            width: 250px !important;
+            height: 250px !important;
+            border-radius: 18px;
           }
         }
 
         .story-title {
           font-size: 36px;
           color: #1f3127;
+          padding-top: 40px;
           margin: 16px 0 8px;
           font-weight: 700;
         }
@@ -534,6 +556,7 @@ const OliveTreeBooking = () => {
             gap: 2rem;
             min-height: 280px;
             flex-direction: column;
+            
           }
           
           .slide-image {

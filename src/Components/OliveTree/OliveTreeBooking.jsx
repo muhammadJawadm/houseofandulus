@@ -122,7 +122,7 @@ const OliveTreeBooking = () => {
                     </div>
                     <h3>{option.title}</h3>
                     <div className="price-container">
-                      <span className="price">€{option.price.toLocaleString()}</span>
+                      <span className="price">£{option.price.toLocaleString()}</span>
                       <span className="price-label">total</span>
                     </div>
                   </div>
